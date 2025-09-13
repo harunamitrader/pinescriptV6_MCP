@@ -1,5 +1,7 @@
 # Pine Script v6 MCP（manual.json 利用）
 
+Repository: https://github.com/harunamitrader/pinescriptV6_MCP
+
 Pine Script v6 のリファレンスマニュアルを JSON 化した `manual.json` を用いて、Claude Code / Codex CLI / Gemini CLI 等の MCP クライアントから正確な Pine Script コーディングを支援するシンプルな MCP サーバです。
 
 - 目的: 正確な API 仕様・シグネチャ・定数名・用例への素早いアクセス
