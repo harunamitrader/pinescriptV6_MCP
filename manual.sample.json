@@ -1,0 +1,14 @@
+{
+  "title": "Pine Script v6 Reference (sample)",
+  "source_url": "https://jp.tradingview.com/pine-script-reference/v6/",
+  "language": "ja",
+  "version": "v6",
+  "generated_at": "2025-09-13T00:00:00Z",
+  "toc": [
+    { "id": "an_@function", "title": "@function", "category_prefix": "an", "category_title": "アノテーション" },
+    { "id": "const_color.red", "title": "color.red", "category_prefix": "const", "category_title": "定数" },
+    { "id": "const_color.green", "title": "color.green", "category_prefix": "const", "category_title": "定数" },
+    { "id": "fun_plot", "title": "plot()", "category_prefix": "fun", "category_title": "関数" }
+  ]
+}
+

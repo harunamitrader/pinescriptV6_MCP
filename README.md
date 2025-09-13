@@ -33,10 +33,12 @@ cd pinescriptMCP
 npm i
 ```
 
-2) 起動（手動起動の例）
+2) 起動（手動起動の例・サンプルデータ可）
 
 ```
 node pinescriptMCP/server.mjs --manual C:/path/to/manual.json
+# サンプルで試す場合
+node pinescriptMCP/server.mjs --manual ./pinescriptMCP/manual.sample.json
 ```
 
 環境変数 `PINE_MANUAL_PATH` でも指定できます。
@@ -118,3 +120,4 @@ Gemini CLI が MCP 設定で `mcpServers` を受け付ける場合、次のよ�
 
 - 本サーバは読み取り専用です。外部書き込み・外部呼び出しは行いません。
 - `manual.json` は TradingView 由来の資料です。本リポジトリには含めません。各自の環境で用意し、利用条件に従って私的利用の範囲でご利用ください。
+
