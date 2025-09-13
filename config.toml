@@ -1,29 +1,12 @@
-[projects.'\\?\C:\Users\harunami\Desktop\codex']
-trust_level = "trusted"
+## ~/.codex/config.toml（サンプル）
+# 必要に応じて既存設定に追記してください。
 
-# ~/.codex/config.toml
-model = "gpt-5"
-
-# モデルがどれだけ“考える”か
-# 使える値: "none" | "low" | "medium" | "high"
-model_reasoning_effort = "high"
-
-# 思考サマリー（要約ログ）を表示するか
-# 使える値: "auto" | "none"
-model_reasoning_summary = "auto"
-
-# 全自動モード（利用注意）
-ask_for_approval = "never"
-approval_policy = "never"
-
-## MCP servers
-# Codex CLI は TOML の [mcp_servers.<name>] 形式で stdio MCP サーバを登録できます。
-# Windows パスはバックスラッシュのエスケープ問題を避けるため、スラッシュ区切りを推奨します。
-
+[mcp_servers]
 [mcp_servers.pinescript_mcp]
-command = "node"
+command = "node"  # 例: "C:/Program Files/nodejs/node.exe"
 args = [
-  "C:/Users/harunami/Desktop/codex/pinescriptMCP/server.mjs",
+  "C:/path/to/pinescriptV6_MCP/pinescriptMCP/server.mjs",
   "--manual",
-  "C:/Users/harunami/Desktop/codex/pinescriptMCP/manual.json"
+  "C:/path/to/pinescriptV6_MCP/pinescriptMCP/manual.json"
 ]
+

@@ -61,9 +61,9 @@ node server.mjs --manual C:/path/to/manual.json
 [mcp_servers.pinescript_mcp]
 command = "C:/Program Files/nodejs/node.exe"
 args = [
-  "C:/Users/harunami/Desktop/codex/pinescriptMCP/server.mjs",
+  "C:/path/to/pinescriptV6_MCP/pinescriptMCP/server.mjs",
   "--manual",
-  "C:/Users/harunami/Desktop/codex/pinescriptMCP/manual.json"
+  "C:/path/to/pinescriptV6_MCP/pinescriptMCP/manual.json"
 ]
 ```
 
@@ -81,9 +81,9 @@ Claude Desktop の設定（Developer → MCP Servers）で、次の JSON を追�
     "pinescript_mcp": {
       "command": "node",
       "args": [
-        "C:/Users/harunami/Desktop/codex/pinescriptMCP/server.mjs",
+        "C:/path/to/pinescriptV6_MCP/pinescriptMCP/server.mjs",
         "--manual",
-        "C:/Users/harunami/Desktop/codex/pinescriptMCP/manual.json"
+        "C:/path/to/pinescriptV6_MCP/pinescriptMCP/manual.json"
       ]
     }
   }
@@ -104,9 +104,9 @@ Gemini CLI が MCP 設定で `mcpServers` を受け付ける場合、次のよ�
     "pinescript_mcp": {
       "command": "node",
       "args": [
-        "C:/Users/harunami/Desktop/codex/pinescriptMCP/server.mjs",
+        "C:/path/to/pinescriptV6_MCP/pinescriptMCP/server.mjs",
         "--manual",
-        "C:/Users/harunami/Desktop/codex/pinescriptMCP/manual.json"
+        "C:/path/to/pinescriptV6_MCP/pinescriptMCP/manual.json"
       ]
     }
   }
