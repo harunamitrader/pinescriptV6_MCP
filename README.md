@@ -26,6 +26,13 @@ Pine Script v6 のリファレンスマニュアルを JSON 化した `manual.js
 
 ## インストール / 実行
 
+0) クローン導入（推奨）
+
+```
+git clone https://github.com/harunamitrader/pinescriptV6_MCP.git
+cd pinescriptV6_MCP/pinescriptMCP
+```
+
 1) 依存インストール
 
 ```
@@ -36,7 +43,9 @@ npm i
 2) 起動（手動起動の例）
 
 ```
-node pinescriptMCP/server.mjs --manual C:/path/to/manual.json
+node server.mjs --manual ./manual.json
+# 既存の別の manual.json を使う場合
+node server.mjs --manual C:/path/to/manual.json
 ```
 
 環境変数 `PINE_MANUAL_PATH` でも指定できます。
