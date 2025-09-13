@@ -5,7 +5,7 @@ Repository: https://github.com/harunamitrader/pinescriptV6_MCP
 Pine Script v6 のリファレンスマニュアルを JSON 化した `manual.json` を用いて、Claude Code / Codex CLI / Gemini CLI 等の MCP クライアントから正確な Pine Script コーディングを支援するシンプルな MCP サーバです。
 
 - 目的: 正確な API 仕様・シグネチャ・定数名・用例への素早いアクセス
-- 前提: ローカルに `manual.json`（UTF-8, v6, ja）があること（本リポジトリには含めません）
+- 前提: `manual.json`（UTF-8, v6, ja）を同梱済み。試用向けに `manual.sample.json` も提供。
 - 方針: 最小依存・自己完結・読み取り専用・メモリ常駐インデックス
 
 ---
@@ -41,7 +41,7 @@ node pinescriptMCP/server.mjs --manual C:/path/to/manual.json
 node pinescriptMCP/server.mjs --manual ./pinescriptMCP/manual.sample.json
 ```
 
-環境変数 `PINE_MANUAL_PATH` でも指定できます。
+環境変数 `PINE_MANUAL_PATH` でも指定できます。`manual.sample.json` での起動例も併記しています。
 
 ---
 
@@ -119,5 +119,5 @@ Gemini CLI が MCP 設定で `mcpServers` を受け付ける場合、次のよ�
 ## 注意・ライセンス
 
 - 本サーバは読み取り専用です。外部書き込み・外部呼び出しは行いません。
-- `manual.json` は TradingView 由来の資料です。本リポジトリには含めません。各自の環境で用意し、利用条件に従って私的利用の範囲でご利用ください。
+- `manual.json` は本リポジトリ同梱のユーザー生成データです。出典 URL は含まれますが、配布権限はリポジトリ作者の許諾に基づきます。
 
